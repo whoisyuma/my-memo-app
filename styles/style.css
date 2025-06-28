@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* header */
+header {
+    width: 100%;
+    display: flex;
+    background-color: #f7f7f7;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+    /* position: fixed; */
+    padding: 30px 100px;
+}
+
+.header-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+header a {
+    font-weight: bold;
+    border: none;
+    color: #000; 
+    font-size: 18px;
+}
+
+
+header a:hover {
+    border-bottom: 2px solid #000;
+}
+
+
+/* index.php main */
+main {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 30px;
+}
+
+.post {
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post-content h2 a:hover {
+    border-bottom: 2px solid #000;
+}
+
+.post-content h2,
+.post-content p {
+    margin-bottom: 5px;
+}
+
+.post-delete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-delete time {
+    font-size: 15px;
+    color: #858383;
+}
+
+/* create.php main */
+.post-create {
+    background-color: #f7f7f7;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-input input, 
+.post-input textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.post-input input {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.post-input textarea {
+    min-height: 120px;
+    resize: vertical;
+    margin-bottom: 5px;
+}
+
+.post-input p {
+    color: red;
+    margin: 0 5px 20px 5px;
+}
+
+.post-save {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.post-save a {
+    font-size: 15px;
+}
+
+.post-save a:hover {
+    border-bottom: 1px solid #000;
+}
+
+.post-create button {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* detail.php main  */
+.post-detail {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.post-detail h1 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.post-detail p {
+    margin-bottom: 20px;
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+.post-detail time {
+    margin-bottom: 40px;
+    font-size: 15px;
+    color: #858383;
+}
+
+.post-detail a {
+    color: #000; 
+    font-size: 18px;
+}
+
+.post-detail a:hover {
+    border-bottom: 2px solid #000;
+}
